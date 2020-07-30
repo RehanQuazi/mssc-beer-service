@@ -1,3 +1,3 @@
-# MSSC Beer Sevice
+# MSSC Beer Sevice Fix
 
-Sping Boot Micro Servive for MSSC Beer Service
+Sping Boot Micro Servive for MSSC Beer Service 
