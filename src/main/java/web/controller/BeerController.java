@@ -13,13 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import web.model.BeerDto;
-
-@RestController
 @RequestMapping("/api/v1/beer")
+@RestController
 public class BeerController {
 
-	@GetMapping("/beerId")
-	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID id){
+	@GetMapping("/{beerId}")
+	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId){
 		// todo Impl
 		return new ResponseEntity<BeerDto>(BeerDto.builder().build(),HttpStatus.OK);
 	}
